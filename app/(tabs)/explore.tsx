@@ -6,8 +6,25 @@ import { ExternalLink } from '@/components/ExternalLink';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import { XMLParser } from 'fast-xml-parser';
 
 export default function TabTwoScreen() {
+  const parser=new XMLParser()
+  const getXMLResponse = () => {
+    fetch('https://gist.githubusercontent.com/Pavneet-Sing/d0f3324f2cd3244a6ac8ffc5e8550102/raw/8ebc801b3e4d4987590958978ae58d3f931193a3/XMLResponse.xml')
+        .then((response) => response.text())
+        .then((textResponse) => {
+            let obj = parser.parse(textResponse);
+            console.log("objec",obj)
+            let fname = obj.person.fname;
+            let lname = obj.person.lname;
+            let phone = obj.person.contacts.personal.phone;
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+}
+getXMLResponse()
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
