@@ -1,5 +1,4 @@
-<root>
-  <div
+export const dataxml= `<div
     id="formSide1"
     class="formSide"
     fdtpagesize="Tablet_10"
@@ -1793,6 +1792,5 @@
           </g>
         </g>
       </svg>
-    </svg>
-</root>
+    </svg>`
 
