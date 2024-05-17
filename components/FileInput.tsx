@@ -27,6 +27,7 @@ const FileInput = () => {
     try {
       let result = await DocumentPicker.getDocumentAsync({});
       if (result?.canceled) {
+        setLoading(false)
         return Alert.alert('Please select a file')
       }
       if (result?.assets) {
