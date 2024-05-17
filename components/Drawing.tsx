@@ -36,15 +36,21 @@ export default function Drawing() {
     .minDistance(1);
 
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
+    <GestureHandlerRootView style={{ flex:1,height:200,backgroundColor:'black' }}>
       <GestureDetector gesture={pan}>
-        <View style={{ flex: 1, backgroundColor: "black" }}>
-          <Canvas style={{ flex: 8 }}>
+        <View style={{flex:1}}>
+          <Canvas style={{flex:1}}>
+          <Path
+            path={"M 100 100 L 300 300"}
+            strokeWidth={2}
+            color="white"
+            style="stroke"
+          />
             {paths.map((p, index) => (
               <Path
                 key={index}
                 path={p.segments.join(" ")}
-                strokeWidth={5}
+                strokeWidth={2}
                 style="stroke"
                 color={p.color}
               />

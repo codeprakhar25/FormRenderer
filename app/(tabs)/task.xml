@@ -1,5 +1,4 @@
-<root>
-  <div
+<div
     id="formSide1"
     class="formSide"
     fdtpagesize="Tablet_10"
@@ -8,7 +7,7 @@
     fdttemplatepagename=""
     fdttemplate="false"
     style="padding: 90px; width: 1122px; height: 1588px; display: inline-block"
-  >
+  />
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1794,8 +1793,3 @@
         </g>
       </svg>
     </svg>
-  </div>
-</root>
-
-
-  
