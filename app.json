@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anonymous.FormRenderer"
     },
     "web": {
       "bundler": "metro",
@@ -37,7 +38,10 @@
       [
         "expo-asset",
         {
-          "assets": ["path/to/file.png", "path/to/directory"]
+          "assets": [
+            "path/to/file.png",
+            "path/to/directory"
+          ]
         }
       ],
       "expo-asset"
