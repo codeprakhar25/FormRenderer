@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "348559231647",
+    "project_id": "appnotifications-e85b5",
+    "storage_bucket": "appnotifications-e85b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348559231647:android:831703c25f9d0d92af70aa",
+        "android_client_info": {
+          "package_name": "com.formrenderer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrevjLWIDahEWtB72NJUlDYGyW-fHOEyk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

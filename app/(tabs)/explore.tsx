@@ -1,10 +1,11 @@
 import { StyleSheet } from 'react-native';
-
+import { Text, Button } from 'react-native';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { HelloWave } from '@/components/HelloWave';
 import FileInput from '@/components/FileInput';
+import LocalNotification from '@/components/Notification';
 
 export default function TabTwoScreen() {
 
@@ -17,6 +18,8 @@ export default function TabTwoScreen() {
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Try it</ThemedText>
       </ThemedView>
+      <Text> Push Notification!! </Text>
+      <Button title={'Click Here'} onPress={LocalNotification} />
       <FileInput />
     </ParallaxScrollView>
   );
